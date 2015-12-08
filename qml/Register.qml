@@ -26,13 +26,12 @@ Item {
         TextField {
             horizontalAlignment: Text.AlignHCenter
             anchors.margins: 20
-            width: logoView.width
+            width: parent.width
             text: "Login"
             style: TextFieldStyle {
                 textColor: "black"
                 background: Rectangle {
                     radius: 2
-                    implicitWidth: 100
                     implicitHeight: 24
                     border.color: "#333"
                     border.width: 1
@@ -41,14 +40,13 @@ Item {
         }
         TextField {
             anchors.margins: 20
-            width: logoView.width
+            width: parent.width
             text: "Password"
             horizontalAlignment: Text.AlignHCenter
             style: TextFieldStyle {
                 textColor: "black"
                 background: Rectangle {
                     radius: 2
-                    implicitWidth: 100
                     implicitHeight: 24
                     border.color: "#333"
                     border.width: 1

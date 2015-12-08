@@ -8,6 +8,8 @@
 #include <QDebug>
 #include "bookview.h"
 #include "bookparser.h"
+#include "Library/Library.hpp"
+#include "ImageProvider.h"
 
 int main(int argc, char *argv[])
 {
@@ -22,7 +24,8 @@ int main(int argc, char *argv[])
 
     engine.rootContext()->setContextProperty("booksModel", QVariant::fromValue(*booksModel));
 
-    BookParser* parser = new BookParser();
+    Library* myLib = new Library();
+    BookParser* parser = new BookParser(myLib);
     parser->setEngine(&engine);
     parser->setBooksModel(booksModel);
     parser->getBooksModels();

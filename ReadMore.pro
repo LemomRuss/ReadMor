@@ -35,5 +35,6 @@ HEADERS += \
     Page/Page.hpp \
     Page/PDFPage.hpp \
     State/PDFState.h \
-    State/State.hpp
+    State/State.hpp \
+    imageprovider.h
 

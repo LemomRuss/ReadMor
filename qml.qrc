@@ -9,5 +9,6 @@
         <file>qml/addBook.png</file>
         <file>qml/Book.jpg</file>
         <file>qml/Reader.qml</file>
+        <file>qml/test.pdf</file>
     </qresource>
 </RCC>

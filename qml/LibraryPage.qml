@@ -81,6 +81,8 @@ Item {
                       }
             }
             Column {
+                width: parent.width
+                height: parent.height
                 anchors.fill : parent
                 Image {
                     source: model.modelData.artBook

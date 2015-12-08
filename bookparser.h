@@ -3,7 +3,10 @@
 
 #include <QObject>
 #include <QQmlApplicationEngine>
-
+#include "Library/Library.hpp"
+#include "Book/Book.hpp"
+#include <string>
+#include "ImageProvider.h"
 
 class BookParser : public QObject
 {
@@ -11,7 +14,7 @@ class BookParser : public QObject
 public:
 //    explicit BookParser(QObject *parent = 0);
 
-    BookParser() = default;
+    BookParser(Library* myLib);
 
     void getBooksModels();
 
@@ -19,13 +22,16 @@ public:
 
     void setEngine(QQmlApplicationEngine* engine);
 
+    void addBook();
+
 //    void parseBooks()
 signals:
 
 public slots:
 
 private:
-      QQmlApplicationEngine* _engine;
+    Library* _myLib;
+     QQmlApplicationEngine* _engine;
 
       QList<QObject*>* _booksModel;
 };
