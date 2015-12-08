@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qml/main.qml</file>
+        <file>qml/TextInputPage.qml</file>
+        <file>qml/login.qml</file>
+        <file>qml/Register.qml</file>
+        <file>qml/LibraryPage.qml</file>
+        <file>qml/back.png</file>
+        <file>qml/addBook.png</file>
+        <file>qml/Book.jpg</file>
+        <file>qml/Reader.qml</file>
+    </qresource>
+</RCC>
